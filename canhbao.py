@@ -23,3 +23,5 @@ for i in range(2,6):
         
         if datetime.datetime.now() > warn and datetime.datetime.now() < str2datetime(end):
             telegram_bot_sendtext(u'\U0001F525' + " Hey Maya, ngày mai (" + end + ") đơn hàng " + wks.acell('D' + str(i)).value + " của " + wks.acell('H' + str(i)).value + " sẽ đến" )
+
+# chay crontab: */2 * * * * /usr/bin/python3 /home/huan/test.py
